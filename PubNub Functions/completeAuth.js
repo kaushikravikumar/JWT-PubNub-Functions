@@ -40,7 +40,7 @@ export default (request, response) => {
     return xhr.fetch(accessTokenURL, accessTokenRequestOptions).then((accessTokenResponse) => {
         var accessToken = JSON.parse(accessTokenResponse.body).access_token;
         console.log(accessToken);
-        const getDriveFileURL = "https://www.googleapis.com/drive/v2/files/1dN-ZgKdiii7pyVB7zaXzuSHyOaq75ctgykl7RGzG1JU/export?mimeType=text/plain";
+        const getDriveFileURL = "https://www.googleapis.com/drive/v2/files/INSERT_DOCUMENT_ID_HERE/export?mimeType=text/plain";
         const getDriveFileOptions = {
             "method": "GET",
             "headers": {
